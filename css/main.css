@@ -1,0 +1,151 @@
+/* Reseteo de css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #EEEEEE;;
+}
+
+header{
+   
+    padding-bottom: 1%;
+    text-align: center;
+
+}
+
+header .imagenHeader{
+    text-align: left;
+    padding-left: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: rgb(206, 201, 201);
+}
+
+header .imagenHeader img{
+    width: 150px;
+    }
+
+header .menuNavegacion nav ul{
+    list-style: none;
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: rgb(206, 201, 201);
+    text-align: end;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+header .menuNavegacion nav ul li{
+    display: inline;
+    margin-left: 15px;
+    
+}
+
+header .menuNavegacion nav ul li .boton{
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+main{
+    text-align: center;
+    padding: 50px;
+}
+
+main .contenedorPrincipal h1{
+    margin-bottom: 20px;
+}
+
+main .contenedorPrincipal p{
+    margin-bottom: 20px;
+}
+
+main .sobreMi{
+    padding-top: 1rem;
+}
+
+
+main .contenedorVideos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ /*    grid-gap: 20px;
+    padding: 1rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+main .contenedorVideos .videos{
+    padding: 15px;
+}
+
+footer{
+    text-align: center;
+    background-color: grey;
+    height: 30px;
+    padding: 1%;
+}
+
+footer .pie{
+    background-color: rgb(206, 201, 201);
+}
+@media (max-width: 768px) {
+    header .menuNavegacion nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .imagenHeader img {
+        width: 100px; /* Reduce logo size on mobile */
+    }
+
+    main .contenedorPrincipal {
+        padding: 10px;
+    }
+
+    main .contenedorVideos {
+        width: 80%;  
+        height: auto;
+        display: block;  
+        margin: 0 auto;  
+    }
+
+    main .videos iframe {
+        width: 100%; 
+        height: auto;
+    }
+
+    footer .pie {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header .menuNavegacion nav ul li .boton{
+        color: rgb(20, 20, 20);
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333; /* Gris oscuro */
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+    
+    
+    header .menuNavegacion nav ul li .boton:hover {
+        background-color: #00bfff; /* Color celeste */
+        color: white;
+    }
+
+    main .videos iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    
+}
